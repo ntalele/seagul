@@ -56,7 +56,7 @@ class DrakeAcroEnv(core.Env):
 
         #        import ipdb; ipdb.set_trace()
 
-        max_torque = 700
+        max_torque = 25
         high = np.array([2 * pi, pi, 10, 30])
         low = np.array([0, -pi, -10, -30])
         self.observation_space = spaces.Box(low=low, high=high, dtype=np.float32)

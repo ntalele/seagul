@@ -30,7 +30,7 @@ activation = nn.ReLU
 #torch.set_default_dtype(torch.double)
 proc_list = []
 
-for seed in [1,2,3]:
+for seed in [0,1,2,3]:
 
     env_name = "su_acro_drake-v0"
     env = gym.make(env_name)
@@ -114,7 +114,7 @@ for seed in [1,2,3]:
             ppo_switch,
             run_name,
             "trying to replicate earlier results that use ppo with ppo2",
-            "/data/data2/drake_ppo2/",
+            "/data/drake_ppo2/",
         ),
     )
     p.start()

@@ -209,7 +209,7 @@ class MLP(nn.Module):
             data = self.activation(layer(data))
 
         return self.activation(self.output_layer(data))
-#        return self.output_activation(self.output_layer(data))
+       # return self.output_activation(self.output_layer(data))
 
 
 class CategoricalMLP(nn.Module):
